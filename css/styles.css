@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #777;
+  font-weight: 400;
+  padding: 3rem;
+  background: rgb(212, 215, 217);
+
+  height: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+    background-color: white;
+    width: 150rem;
+    height: 80rem;
+    border-radius: 3rem;
+}
+.header{
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.logo-container{
+    padding: 2rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-bar{
+    padding-right: 3rem;
+    width: 32rem;
+
+}
+.find-sorah{
+    width: 100%;
+    height: 4rem;
+    border-radius:2rem ;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.body-container{
+    width: 100%;
+    height: 73rem;
+ 
+    border-radius: 3rem;
+    display:flex;
+}
+.nav-bar{
+    width: 7rem;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: space-between;
+}
+.sorahs-container{
+    width: 115rem;
+    height: 100%;
+   background-color: rgb(237, 237, 237);
+   border-top-left-radius: 2rem;
+   border-top-right-radius: 2rem;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.profil-container{
+    width: 28rem;
+}
+.fav-home{
+    padding-top: 3rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.logout-sys{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    padding-bottom: 4rem;
+}
+.icons:hover{
+    filter: invert(93%) sepia(52%) saturate(3247%) hue-rotate(52deg) brightness(90%) contrast(88%);
+}
+.sortby-container{
+    width: 100%;
+    height: 10rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sortby{
+    width: 13rem;
+    height: 6rem;
+background-color: rgb(237, 237, 237);
+border: solid 1px gray;
+border-radius: 1.4rem;
+padding: 1rem;
+
+margin-right: 2rem;
+}
+.sortby:hover{
+    background-color: aliceblue;
+}
+.sortby p{
+    font-size: 1.2rem;
+}
+.sortby h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+}
+.arrow{
+    margin-left: 1rem;
+}
+.profile{
+    margin: 0 1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: solid 1px rgb(184, 180, 180);
+}
+.profile-img{
+    width: 10rem;
+    border-radius: 50%;
+}
+.last-read{
+    margin: 0 1rem;
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: solid 1px rgb(184, 180, 180);
+}
+.last-read h4,
+.last-listened h4{
+color: mediumseagreen;
+margin-bottom: 1rem;
+}
+.last-listened{
+    margin: 0 1rem;
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: solid 1px rgb(184, 180, 180);
+}
+.last-read img,
+.last-listened img{
+    filter: invert(100%) sepia(0%) saturate(2433%) hue-rotate(180deg) brightness(106%) contrast(86%);
+}
+.sorahs-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+}
+.sorah{
+    margin-left: 1rem;
+    width: 26rem ;
+    height: 10rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+.sorah:hover{
+    width: 27rem;
+    height: 11rem;
+    transition: 0.7s;
+}
+.sorah-number{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color:rgb(220, 244, 220) ;
+    color: green;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.english{
+    display: flex;
+    flex-direction: column;
+}
+.arabic{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+}
+.sorah-add{
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: invert(93%) sepia(52%) saturate(3247%) hue-rotate(52deg) brightness(90%) contrast(88%);
+    color: green;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+.hiddenbtn{
+    width: 8rem;
+    height: 100%;
+}

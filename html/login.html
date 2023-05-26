@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms form__login">
+            <div class="login-title">
+                <h1>Quran <span>Hadith</span></h1>
+            </div>
+          <h2>Login</h2>
+          <form class="form1">
+            <div class="log__email log__box">
+                <label for="email">Email:</label>
+
+                <input
+                type="email"
+                pattern="[a-zA-z0-9-+._]+@[a-zA-z0-9-+._]+\.[a-z]{2,}"
+                class="login__email input-style"
+                value=""
+                id="Email Address"
+                required
+              />
+             
+              <small class="form__login-email--error1">error message</small>
+            </div>
+            
+            <div class="log__pass log__box">
+                <label for="password">password</label>
+                <input
+                type="password"
+                class="login__pass input-style"
+                pattern=".{8,}"
+                required
+                id="passwords"
+                value=""
+              />       
+              <small class="form__login-pass--error2">wrong password</small>
+            </div>
+            
+            <div class="log__pass log__box">
+                <label for="password">confirm password</label>
+                <input
+                  type="password"
+                  class="login__pass input-style"
+                  pattern=".{8,}"
+                  required
+                  id="confirm_password"
+                  value=""
+                />
+                <small class="form__login-pass--error3">Passwords Don't Match</small>
+              </div>
+    <div class="btns">
+       <button class="login-btn"><a>log in</a></button>
+        <button class="login-btn">reset</button>
+    </div>
+            
+    
+            <div class="form__text">
+              <p>not a member ?</p>
+              <a class="form__sign--up" href="">Register</a>
+            </div>
+          </form>
+        </div>
+        <!------- regestration form ------ -->
+        <div class="forms form__signUp">
+            <div class="login-title">
+                <h1>Quran <span>Hadith</span></h1>
+            </div>
+          <h2>Sign Up</h2>
+    
+          <form class="form2">
+            <div class="log__name log__box">
+                <label for="password">Name</label>
+              <input
+                type="text"
+                class="signup__name input-style"
+                
+                required
+                id="Username"
+              />
+              <small class="form__signUp-name--error ae">error message</small>
+             
+              
+            </div>
+            <div class="log__phone log__box">
+                <label for="password">phone</label>
+              <input
+                type="text"
+                class="signup__phone input-style"
+                pattern="\d{8,}"
+                required
+                id="User phone"
+              />
+              <small class="form__signUp-name--error2">wrong phone number</small>
+             
+              
+            </div>
+            <div class="log__email log__box">
+                <label for="password">email</label>
+              <input
+                type="email"
+                pattern="[a-zA-z0-9-+._]+@[a-zA-z0-9-+._]+\.[a-z]{2,}"
+                class="signup__email log__email--reg input-style"
+                
+                required
+                id="Email"
+              />
+              <small class="form__signUp-email--error ae">error message</small>
+            </div>
+            <div class="log__pass log__box">
+                <label for="password">password</label>
+              <input
+                type="password"
+                class="signup__pass input-style"
+                pattern=".{8,}"
+                required
+                id="Password"
+              />
+             
+              <small class="form__signUp-pass--error ae">error message</small>
+            </div>
+            <div class="log__pass log__box">
+                <label for="password">confirm password</label>
+              <input
+                type="password"
+                class="signup__confirm log__confirm--reg input-style"
+                pattern=".{8,}"
+                required
+                id="Confirm Password"
+              />
+            
+             
+              <small class="form__signUp-confirm--error ae">error message</small>
+            </div>
+            
+    
+            <div class="btns">
+                <button class="login-btn reg-btn"> <a > sign up</a></button>
+                <button class="login-btn">reset</button>
+            </div>
+    
+            <div class="form__text textpad">
+              <p>already have an Account ?</p>
+              <a class="form__login--link" href="">Login Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+
+<script src="/js/login.js"></script>
+</html>
+

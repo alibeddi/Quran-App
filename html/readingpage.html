@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/readingpagestyles.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+  <div class="header">
+    <div class="logo-container">
+        <img src="/photos/quran.png" alt="" width="50">
+        <div class="login-title">
+            
+            <h1>Quran <span>Hadith</span></h1>
+        </div>
+    </div>
+   
+    <div class="search-bar">
+        <div class="options">
+        <input type="search" class="find-sorah" placeholder="search"
+        
+    </div>
+    <button class="listen"><img src="/photos/headphones.png" alt="" width="30"></button>
+</div>
+  </div>
+     </div>
+   
+    <div class="body-container">
+        <div class="nav-bar">
+            <div class="fav-home">
+                <a href="/html/index.html"><img class="icons" src="/photos/reading-book.png" alt="" width="30"></a>   
+                <a href=""><img class="icons" src="/photos/heart.png" alt="" width="30"></a>   
+                <a href=""><img class="icons" src="/photos/paper-plane.png" alt="" width="30"></a>   
+                <a href=""><img class="icons" src="/photos/dollar-symbol.png" alt="" width="30"></a>   
+            </div>
+            <div class="logout-sys">
+                <a href=""><img class="icons" src="/photos/system.png" alt="" width="30"></a>
+                <a href="login.html"><img class="icons" src="/photos/logout.png" alt="" width="30"></a>
+            </div>
+        </div>
+        <div class="profil-container">
+            <div class="juz-surah-page">
+                <div class="search-by-kind">surah</div>
+                <div class="search-by-kind">juz</div>
+                <div class="search-by-kind">page</div>
+
+            </div>
+            <div class="list">
+                <div class="searchcont">
+                    <input type="search" placeholder="search surah" class="search-ayat">
+                </div>
+            </div>
+        </div>
+        <div class="sorahs-container">
+           <div class="bismallah"><h1>﷽</h1></div>
+           <div class="quran-ayat">
+
+           </div>
+         
+        </div>
+        
+       
+    </div>
+    
+        <div class="player-container hidden">
+            <div class="playback_controls">
+                <button onclick="skip('back')"><i class="fa fa-fast-backward"> <img src="/photos/previous.png" alt="" width="10"></i></button>
+                <button onclick="playpause()"><i class="fa fa-play"></i><i class="fa fa-pause"><img src="/photos/play-button.png" alt="" width="10"></i></button>
+                <button onclick="stop()"><i class="fa fa-stop"><img src="/photos/pause-button.png" alt="" width="10"></i></button>
+                <button onclick="skip('fwd')"><i class="fa fa-fast-forward"><img class="next" src="/photos/previous.png" alt="" width="10"></i></button>
+            </div>
+            <div id="seekbar">
+                <input type="range" oninput="setPos(this.value)" id="seek" value="0" max="">
+             </div>
+             <div class="volume_controls">
+                <button id="mute" onclick="mute()"><i class="fa fa-volume-up"> <img src="/photos/speaker-filled-audio-tool.png" alt="" width="10"></i></button>
+                <input type="range" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+    
+</div>
+</body>
+<script src="/js/readingpage.js"></script>
+</html>
