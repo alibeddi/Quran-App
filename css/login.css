@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #777;
+  font-weight: 400;
+  padding: 3rem;
+  background: rgb(212, 215, 217);
+
+  height: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 35rem;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.login-title{
+    width:90%;
+    background-color: transparent;
+    border-radius :15px;
+    display: flex ;
+    align-items:center;
+    justify-content: flex-start;
+    position: relative;
+}
+.login-title h1{
+    
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 1.5px;
+  color: #333;
+  position:relative ;
+}
+.login-title span{
+color: grey;
+font-weight: 100;
+}
+.forms {
+  padding: 2.4rem;
+  background-color: rgb(225, 225, 225);
+  border-radius: 3rem;
+  width: 90%;
+  perspective: 200rem;
+  height: fit-content;
+  max-height: 535px;
+  height: 100%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 2s;
+}
+.forms h2 {
+
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  color: rgb(79, 197, 89);
+  position: relative;
+  text-align: center;
+}
+
+
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+label{
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: -1rem;
+}
+.log__box {
+  
+  height: 4rem;
+  width: 100%;
+  
+}
+.input-style {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+  /* position: absolute; */
+  transition: all 0.3s;
+  
+  border-radius: 10px;
+}
+form .i {
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+form .eye {
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #ccc;
+  padding: 1rem;
+  cursor: pointer;
+}
+.log__box input:is(:focus, :valid) {
+  border-bottom-color: var(--blue);
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.log__box input:is(:focus, :valid) ~ .i {
+  color: var(--blue);
+}
+.log__remember label {
+  font-size: 1.2rem;
+}
+.log__remember {
+  margin-top: -1rem;
+  height: fit-content;
+}
+
+.form__text {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.form__text a {
+  text-decoration: none;
+  color: var(--blue);
+}
+input {
+  border: none;
+  outline: none;
+}
+
+.form__signUp {
+  transform: rotateY(-180deg);
+  height: 50rem;
+}
+
+.form__login form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+input:invalid {
+  color: red;
+}
+input:invalid:focus {
+  border-bottom: 2px solid red;
+}
+small {
+  font-size: 1rem !important;
+  position: relative;
+ 
+  width: 100%;
+  left: 0;
+  opacity: 0;
+}
+.error {
+  opacity: 1 !important;
+  color: red;
+}
+button:active {
+  background-color: var(--darkBlue);
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+input {
+  font-family: "Poppins", sans-serif;
+}
+.btns{
+    margin-top: 1rem;
+    width:20rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login-btn{
+width: 7rem;
+height: 3rem;
+border-radius: 10px;
+background-color: green;
+color: white;
+border: none;
+font-weight: 500;
+letter-spacing: 1px;
+cursor: pointer;
+}
+.form2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.textpad{
+    padding-bottom: 1rem;
+}
+.form__login-pass--error3{
+    opacity: 0;
+}
